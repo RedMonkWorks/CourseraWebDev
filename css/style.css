@@ -1,3 +1,90 @@
-body{
-   color: #202020;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size:10vw;
+  }
+
+  body {
+    font-family: 'Balsamiq Sans', cursive;
+  }
+
+  h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  h2 {
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+    left: 60%;
+    width: 40%;
+    font-size: 30px;
+  }
+
+  #c1 {
+    background-color: #f38b8b;
+  }
+  #c2 {
+    background-color: #d63e3e;
+    color: azure;
+  }
+  #c3 {
+    background-color: #f3d37a;
+  }
+
+  p {
+    
+    width: 100%;
+    font-family: Helvetica;
+    padding: 1%;
+    font-size: 14px;
+  }
+  
+  /**** Responsive Framework. ****/
+  .row {
+      width: 100%;
+  }
+  
+  /********** For Desktop View **********/
+  @media (min-width: 992px) {
+    .col-lg-1{
+        background-color: #6d6c6c;
+        border: 1px solid black;
+        float: left;
+        margin: 1%;
+        width: 31.33%;
+        height: 25%;
+    }
+  }
+  
+  /********** For Tablet View **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2{
+        background-color: #6d6c6c;
+        border: 1px solid black;
+        margin: 1%;
+        float: left;
+        height: 30%;
+    }
+    .col-md-1{
+        width: 48%;
+    }
+    .col-md-2{
+        width: 98%;
+    }
+  }
+
+  /********** For Mobile View **********/
+  @media (max-width: 767px){
+    .col-sm-1{
+        background-color: #6d6c6c;
+        border: 1px solid black;
+        float: left;
+        width: 98%;
+        margin: 1%;
+        height: 40%;
+    }
 }
